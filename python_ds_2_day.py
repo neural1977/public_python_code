@@ -75,3 +75,25 @@ counter.count()
 print(counter.inner_var)
 
 print(counter._JustCounter__secret_count)
+
+import tensorflow as tf
+
+tf.__version__
+
+!python --version
+
+import numpy
+
+numpy.__version__
+
+big_array = np.linspace(3,0,100000000)
+
+big_array
+
+import timeit
+
+start_time = timeit.default_timer()
+sorted_array = np.sort(big_array, kind = "mergesort")
+print("Elapsed time: ", timeit.default_timer() - start_time)
+
+sorted_array
